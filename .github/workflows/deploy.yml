@@ -41,13 +41,13 @@ jobs:
         env:
           NODE_ENV: production
 
-      - name: Remove large files from build
-        run: |
-          find ./build/client -name "*.jpg" -size +5M -delete || true
-          find ./build/client -name "*.jpeg" -size +5M -delete || true
-          find ./build/client -name "*.png" -size +5M -delete || true
-          find ./build/client -name "*.webp" -size +5M -delete || true
-          echo "Large files removed"
+      # - name: Remove large files from build
+      #   run: |
+      #     find ./build/client -name "*.jpg" -size +5M -delete || true
+      #     find ./build/client -name "*.jpeg" -size +5M -delete || true
+      #     find ./build/client -name "*.png" -size +5M -delete || true
+      #     find ./build/client -name "*.webp" -size +5M -delete || true
+      #     echo "Large files removed"
 
       - name: Check build size
         run: |
