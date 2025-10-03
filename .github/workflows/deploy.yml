@@ -101,12 +101,21 @@ jobs:
           # Коммитим
           git commit -m "Deploy from GitHub Actions - $(date '+%Y-%m-%d %H:%M:%S')"
 
-          # Добавляем remote
-          git remote add origin https://github.com/Bruno-116aff/Meadow-Paradise.git || echo "Remote already exists"
+          # Проверяем токен
+          echo "Checking GitHub token availability..."
+          if [ -z "${{ secrets.GH_TOKEN }}" ]; then
+            echo "Error: GH_TOKEN is not available!"
+            exit 1
+          else
+            echo "GitHub token is available"
+          fi
 
-          # Пушим в gh-pages
+          # Добавляем remote с токеном
+          git remote add origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/Bruno-116aff/Meadow-Paradise.git || echo "Remote already exists"
+
+          # Пушим в gh-pages с токеном
           echo "Pushing to gh-pages branch..."
-          git push -f origin HEAD:gh-pages
+          git push -f https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/Bruno-116aff/Meadow-Paradise.git HEAD:gh-pages
 
           echo "Deployment completed successfully!"
         if: github.ref == 'refs/heads/master'
