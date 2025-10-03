@@ -7,7 +7,7 @@ on:
     branches: [main, master]
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -45,11 +45,16 @@ jobs:
         run: |
           du -sh ./build/client
           echo "Build directory size checked"
+          
+      - name: List build contents
+        run: |
+          ls -la ./build/client/
+          echo "Build contents listed"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/master'
         with:
-          github_token: ${{ secrets.GH_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build/client
           cname: # Оставьте пустым если не используете собственный домен
