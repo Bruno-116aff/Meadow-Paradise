@@ -11,6 +11,10 @@ permissions:
   pages: write
   id-token: write
 
+# Разрешаем Actions использовать GITHUB_TOKEN
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -29,7 +33,11 @@ jobs:
         run: npm ci
 
       - name: Build for static export
-        run: npm run build:static
+        run: |
+          echo "Building static export..."
+          npm run build:static
+          echo "Build completed. Checking results..."
+          ls -la ./build/ || echo "Build directory not found!"
         env:
           NODE_ENV: production
 
@@ -54,13 +62,51 @@ jobs:
       - name: Deploy to GitHub Pages
         run: |
           echo "Starting deployment to gh-pages branch..."
-          cd ./build/client
+          echo "Checking build directory structure..."
+          ls -la ./build/
+          echo "Checking client directory..."
+          ls -la ./build/client/ || echo "No client directory found"
+
+          # Определяем правильную папку для деплоя
+          if [ -d "./build/client" ]; then
+            DEPLOY_DIR="./build/client"
+            echo "Using build/client directory"
+          elif [ -d "./build" ]; then
+            DEPLOY_DIR="./build"
+            echo "Using build directory"
+          else
+            echo "Error: No build directory found!"
+            exit 1
+          fi
+
+          echo "Deploying from: $DEPLOY_DIR"
+          cd $DEPLOY_DIR
+
+          # Проверяем что в папке есть файлы
+          echo "Files in deploy directory:"
+          ls -la
+
+          # Инициализируем git
           git init
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
+
+          # Добавляем все файлы
           git add .
-          git commit -m "Deploy from GitHub Actions - $(date)"
+
+          # Проверяем статус
+          echo "Git status:"
+          git status
+
+          # Коммитим
+          git commit -m "Deploy from GitHub Actions - $(date '+%Y-%m-%d %H:%M:%S')"
+
+          # Добавляем remote
+          git remote add origin https://github.com/Bruno-116aff/Meadow-Paradise.git || echo "Remote already exists"
+
+          # Пушим в gh-pages
           echo "Pushing to gh-pages branch..."
-          git push -f https://x-access-token:${{ secrets.GH_TOKEN  }}@github.com/Bruno-116aff/Meadow-Paradise.git HEAD:gh-pages
-          echo "Deployment completed!"
+          git push -f origin HEAD:gh-pages
+
+          echo "Deployment completed successfully!"
         if: github.ref == 'refs/heads/master'
