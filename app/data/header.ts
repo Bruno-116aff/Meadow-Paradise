@@ -1,6 +1,6 @@
 export const headerConfig = {
 	logo: {
-		src: '/images/gallery/logos/meadow-paradise-logo.png',
+		src: '/Meadow-Paradise/images/gallery/logos/meadow-paradise-logo.png',
 		alt: 'Meadow Paradise Logo',
 		fallback: '🐎',
 	},

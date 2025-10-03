@@ -11,7 +11,7 @@ export interface GalleryImage {
 const professionalImages: GalleryImage[] = [
 	{
 		id: 'pro-1',
-		src: '/images/gallery/professional/featured-3l4a2287.jpg',
+		src: '/Meadow-Paradise/images/gallery/professional/featured-3l4a2287.jpg',
 		alt: 'Профессиональная фотосессия на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -19,7 +19,7 @@ const professionalImages: GalleryImage[] = [
 	},
 	{
 		id: 'pro-2',
-		src: '/images/gallery/professional/professional-3l4a1885.jpg',
+		src: '/Meadow-Paradise/images/gallery/professional/professional-3l4a1885.jpg',
 		alt: 'Профессиональная фотосессия на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -27,7 +27,7 @@ const professionalImages: GalleryImage[] = [
 	},
 	{
 		id: 'pro-3',
-		src: '/images/gallery/professional/professional-3l4a1896.jpg',
+		src: '/Meadow-Paradise/images/gallery/professional/professional-3l4a1896.jpg',
 		alt: 'Профессиональная фотосессия на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -35,7 +35,7 @@ const professionalImages: GalleryImage[] = [
 	},
 	{
 		id: 'pro-4',
-		src: '/images/gallery/professional/professional-3l4a1949.jpg',
+		src: '/Meadow-Paradise/images/gallery/professional/professional-3l4a1949.jpg',
 		alt: 'Профессиональная фотосессия на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -43,7 +43,7 @@ const professionalImages: GalleryImage[] = [
 	},
 	{
 		id: 'pro-5',
-		src: '/images/gallery/professional/professional-3l4a1951.jpg',
+		src: '/Meadow-Paradise/images/gallery/professional/professional-3l4a1951.jpg',
 		alt: 'Профессиональная фотосессия на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -51,7 +51,7 @@ const professionalImages: GalleryImage[] = [
 	},
 	{
 		id: 'pro-6',
-		src: '/images/gallery/professional/professional-3l4a1991.jpg',
+		src: '/Meadow-Paradise/images/gallery/professional/professional-3l4a1991.jpg',
 		alt: 'Профессиональная фотосессия на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -59,7 +59,7 @@ const professionalImages: GalleryImage[] = [
 	},
 	{
 		id: 'pro-7',
-		src: '/images/gallery/professional/professional-3l4a1995.jpg',
+		src: '/Meadow-Paradise/images/gallery/professional/professional-3l4a1995.jpg',
 		alt: 'Профессиональная фотосессия на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -67,7 +67,7 @@ const professionalImages: GalleryImage[] = [
 	},
 	{
 		id: 'pro-8',
-		src: '/images/gallery/professional/professional-3l4a2017.jpg',
+		src: '/Meadow-Paradise/images/gallery/professional/professional-3l4a2017.jpg',
 		alt: 'Профессиональная фотосессия на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -75,7 +75,7 @@ const professionalImages: GalleryImage[] = [
 	},
 	{
 		id: 'pro-9',
-		src: '/images/gallery/professional/professional-3l4a2024.jpg',
+		src: '/Meadow-Paradise/images/gallery/professional/professional-3l4a2024.jpg',
 		alt: 'Профессиональная фотосессия на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -83,7 +83,7 @@ const professionalImages: GalleryImage[] = [
 	},
 	{
 		id: 'pro-10',
-		src: '/images/gallery/professional/professional-3l4a2048.jpg',
+		src: '/Meadow-Paradise/images/gallery/professional/professional-3l4a2048.jpg',
 		alt: 'Профессиональная фотосессия на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -91,7 +91,7 @@ const professionalImages: GalleryImage[] = [
 	},
 	{
 		id: 'pro-11',
-		src: '/images/gallery/professional/professional-3l4a2097.jpg',
+		src: '/Meadow-Paradise/images/gallery/professional/professional-3l4a2097.jpg',
 		alt: 'Профессиональная фотосессия на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -99,7 +99,7 @@ const professionalImages: GalleryImage[] = [
 	},
 	{
 		id: 'pro-12',
-		src: '/images/gallery/professional/professional-3l4a2101.jpg',
+		src: '/Meadow-Paradise/images/gallery/professional/professional-3l4a2101.jpg',
 		alt: 'Профессиональная фотосессия на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -107,7 +107,7 @@ const professionalImages: GalleryImage[] = [
 	},
 	{
 		id: 'pro-13',
-		src: '/images/gallery/professional/professional-3l4a2130.jpg',
+		src: '/Meadow-Paradise/images/gallery/professional/professional-3l4a2130.jpg',
 		alt: 'Профессиональная фотосессия на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -115,7 +115,7 @@ const professionalImages: GalleryImage[] = [
 	},
 	{
 		id: 'pro-14',
-		src: '/images/gallery/professional/professional-3l4a2138.jpg',
+		src: '/Meadow-Paradise/images/gallery/professional/professional-3l4a2138.jpg',
 		alt: 'Профессиональная фотосессия на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -123,7 +123,7 @@ const professionalImages: GalleryImage[] = [
 	},
 	{
 		id: 'pro-15',
-		src: '/images/gallery/professional/professional-3l4a2167.jpg',
+		src: '/Meadow-Paradise/images/gallery/professional/professional-3l4a2167.jpg',
 		alt: 'Профессиональная фотосессия на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -131,7 +131,7 @@ const professionalImages: GalleryImage[] = [
 	},
 	{
 		id: 'pro-16',
-		src: '/images/gallery/professional/professional-3l4a2168.jpg',
+		src: '/Meadow-Paradise/images/gallery/professional/professional-3l4a2168.jpg',
 		alt: 'Профессиональная фотосессия на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -139,7 +139,7 @@ const professionalImages: GalleryImage[] = [
 	},
 	{
 		id: 'pro-17',
-		src: '/images/gallery/professional/professional-3l4a2233.jpg',
+		src: '/Meadow-Paradise/images/gallery/professional/professional-3l4a2233.jpg',
 		alt: 'Профессиональная фотосессия на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -147,7 +147,7 @@ const professionalImages: GalleryImage[] = [
 	},
 	{
 		id: 'pro-18',
-		src: '/images/gallery/professional/professional-3l4a2273.jpg',
+		src: '/Meadow-Paradise/images/gallery/professional/professional-3l4a2273.jpg',
 		alt: 'Профессиональная фотосессия на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -155,7 +155,7 @@ const professionalImages: GalleryImage[] = [
 	},
 	{
 		id: 'pro-19',
-		src: '/images/gallery/professional/professional-3l4a2282.jpg',
+		src: '/Meadow-Paradise/images/gallery/professional/professional-3l4a2282.jpg',
 		alt: 'Профессиональная фотосессия на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -163,7 +163,7 @@ const professionalImages: GalleryImage[] = [
 	},
 	{
 		id: 'pro-20',
-		src: '/images/gallery/professional/professional-3l4a2334.jpg',
+		src: '/Meadow-Paradise/images/gallery/professional/professional-3l4a2334.jpg',
 		alt: 'Профессиональная фотосессия на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -175,7 +175,7 @@ const professionalImages: GalleryImage[] = [
 const natureImages: GalleryImage[] = [
 	{
 		id: 'nat-1',
-		src: '/images/gallery/nature/ranch-nature-img_6054.jpg',
+		src: '/Meadow-Paradise/images/gallery/nature/ranch-nature-img_6054.jpg',
 		alt: 'Природа ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -183,7 +183,7 @@ const natureImages: GalleryImage[] = [
 	},
 	{
 		id: 'nat-2',
-		src: '/images/gallery/nature/ranch-nature-img_6061.jpg',
+		src: '/Meadow-Paradise/images/gallery/nature/ranch-nature-img_6061.jpg',
 		alt: 'Природа ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -191,7 +191,7 @@ const natureImages: GalleryImage[] = [
 	},
 	{
 		id: 'nat-3',
-		src: '/images/gallery/nature/ranch-nature-img_6062.jpg',
+		src: '/Meadow-Paradise/images/gallery/nature/ranch-nature-img_6062.jpg',
 		alt: 'Природа ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -199,7 +199,7 @@ const natureImages: GalleryImage[] = [
 	},
 	{
 		id: 'nat-4',
-		src: '/images/gallery/nature/ranch-nature-img_6065.jpg',
+		src: '/Meadow-Paradise/images/gallery/nature/ranch-nature-img_6065.jpg',
 		alt: 'Природа ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -207,7 +207,7 @@ const natureImages: GalleryImage[] = [
 	},
 	{
 		id: 'nat-5',
-		src: '/images/gallery/nature/ranch-nature-img_6066.jpg',
+		src: '/Meadow-Paradise/images/gallery/nature/ranch-nature-img_6066.jpg',
 		alt: 'Природа ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -215,7 +215,7 @@ const natureImages: GalleryImage[] = [
 	},
 	{
 		id: 'nat-6',
-		src: '/images/gallery/nature/ranch-nature-img_6239.jpg',
+		src: '/Meadow-Paradise/images/gallery/nature/ranch-nature-img_6239.jpg',
 		alt: 'Природа ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -223,7 +223,7 @@ const natureImages: GalleryImage[] = [
 	},
 	{
 		id: 'nat-7',
-		src: '/images/gallery/nature/ranch-nature-img_6241.jpg',
+		src: '/Meadow-Paradise/images/gallery/nature/ranch-nature-img_6241.jpg',
 		alt: 'Природа ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -231,7 +231,7 @@ const natureImages: GalleryImage[] = [
 	},
 	{
 		id: 'nat-8',
-		src: '/images/gallery/nature/ranch-nature-img_6242.jpg',
+		src: '/Meadow-Paradise/images/gallery/nature/ranch-nature-img_6242.jpg',
 		alt: 'Природа ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -239,7 +239,7 @@ const natureImages: GalleryImage[] = [
 	},
 	{
 		id: 'nat-9',
-		src: '/images/gallery/nature/ranch-nature-img_6255.jpg',
+		src: '/Meadow-Paradise/images/gallery/nature/ranch-nature-img_6255.jpg',
 		alt: 'Природа ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -247,7 +247,7 @@ const natureImages: GalleryImage[] = [
 	},
 	{
 		id: 'nat-10',
-		src: '/images/gallery/nature/ranch-nature-img_6256.jpg',
+		src: '/Meadow-Paradise/images/gallery/nature/ranch-nature-img_6256.jpg',
 		alt: 'Природа ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -255,7 +255,7 @@ const natureImages: GalleryImage[] = [
 	},
 	{
 		id: 'nat-11',
-		src: '/images/gallery/nature/ranch-nature-img_6830.jpg',
+		src: '/Meadow-Paradise/images/gallery/nature/ranch-nature-img_6830.jpg',
 		alt: 'Природа ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -263,7 +263,7 @@ const natureImages: GalleryImage[] = [
 	},
 	{
 		id: 'nat-12',
-		src: '/images/gallery/nature/ranch-nature-img_6831.jpg',
+		src: '/Meadow-Paradise/images/gallery/nature/ranch-nature-img_6831.jpg',
 		alt: 'Природа ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -271,7 +271,7 @@ const natureImages: GalleryImage[] = [
 	},
 	{
 		id: 'nat-13',
-		src: '/images/gallery/nature/ranch-nature-img_6841.jpg',
+		src: '/Meadow-Paradise/images/gallery/nature/ranch-nature-img_6841.jpg',
 		alt: 'Природа ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -279,7 +279,7 @@ const natureImages: GalleryImage[] = [
 	},
 	{
 		id: 'nat-14',
-		src: '/images/gallery/nature/ranch-nature-img_6850.jpg',
+		src: '/Meadow-Paradise/images/gallery/nature/ranch-nature-img_6850.jpg',
 		alt: 'Природа ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -287,7 +287,7 @@ const natureImages: GalleryImage[] = [
 	},
 	{
 		id: 'nat-15',
-		src: '/images/gallery/nature/ranch-nature-img_6853.jpg',
+		src: '/Meadow-Paradise/images/gallery/nature/ranch-nature-img_6853.jpg',
 		alt: 'Природа ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -295,7 +295,7 @@ const natureImages: GalleryImage[] = [
 	},
 	{
 		id: 'nat-16',
-		src: '/images/gallery/nature/ranch-nature-img_6859.jpg',
+		src: '/Meadow-Paradise/images/gallery/nature/ranch-nature-img_6859.jpg',
 		alt: 'Природа ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -307,7 +307,7 @@ const natureImages: GalleryImage[] = [
 const eventsImages: GalleryImage[] = [
 	{
 		id: 'evt-1',
-		src: '/images/gallery/events/activity-img_7094.jpg',
+		src: '/Meadow-Paradise/images/gallery/events/activity-img_7094.jpg',
 		alt: 'Активности на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -315,7 +315,7 @@ const eventsImages: GalleryImage[] = [
 	},
 	{
 		id: 'evt-2',
-		src: '/images/gallery/events/activity-img_7231.jpg',
+		src: '/Meadow-Paradise/images/gallery/events/activity-img_7231.jpg',
 		alt: 'Активности на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -323,7 +323,7 @@ const eventsImages: GalleryImage[] = [
 	},
 	{
 		id: 'evt-3',
-		src: '/images/gallery/events/activity-img_7232.jpg',
+		src: '/Meadow-Paradise/images/gallery/events/activity-img_7232.jpg',
 		alt: 'Активности на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -331,7 +331,7 @@ const eventsImages: GalleryImage[] = [
 	},
 	{
 		id: 'evt-4',
-		src: '/images/gallery/events/activity-img_7237.jpg',
+		src: '/Meadow-Paradise/images/gallery/events/activity-img_7237.jpg',
 		alt: 'Активности на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -339,7 +339,7 @@ const eventsImages: GalleryImage[] = [
 	},
 	{
 		id: 'evt-5',
-		src: '/images/gallery/events/activity-img_7242.jpg',
+		src: '/Meadow-Paradise/images/gallery/events/activity-img_7242.jpg',
 		alt: 'Активности на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -347,7 +347,7 @@ const eventsImages: GalleryImage[] = [
 	},
 	{
 		id: 'evt-6',
-		src: '/images/gallery/events/activity-img_7245.jpg',
+		src: '/Meadow-Paradise/images/gallery/events/activity-img_7245.jpg',
 		alt: 'Активности на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -355,7 +355,7 @@ const eventsImages: GalleryImage[] = [
 	},
 	{
 		id: 'evt-7',
-		src: '/images/gallery/events/activity-img_7250.jpg',
+		src: '/Meadow-Paradise/images/gallery/events/activity-img_7250.jpg',
 		alt: 'Активности на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -363,7 +363,7 @@ const eventsImages: GalleryImage[] = [
 	},
 	{
 		id: 'evt-8',
-		src: '/images/gallery/events/activity-img_7252.jpg',
+		src: '/Meadow-Paradise/images/gallery/events/activity-img_7252.jpg',
 		alt: 'Активности на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -371,7 +371,7 @@ const eventsImages: GalleryImage[] = [
 	},
 	{
 		id: 'evt-9',
-		src: '/images/gallery/events/activity-img_7270.jpg',
+		src: '/Meadow-Paradise/images/gallery/events/activity-img_7270.jpg',
 		alt: 'Активности на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -379,7 +379,7 @@ const eventsImages: GalleryImage[] = [
 	},
 	{
 		id: 'evt-10',
-		src: '/images/gallery/events/activity-img_7272.jpg',
+		src: '/Meadow-Paradise/images/gallery/events/activity-img_7272.jpg',
 		alt: 'Активности на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -387,7 +387,7 @@ const eventsImages: GalleryImage[] = [
 	},
 	{
 		id: 'evt-11',
-		src: '/images/gallery/events/activity-img_7276.jpg',
+		src: '/Meadow-Paradise/images/gallery/events/activity-img_7276.jpg',
 		alt: 'Активности на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -395,7 +395,7 @@ const eventsImages: GalleryImage[] = [
 	},
 	{
 		id: 'evt-12',
-		src: '/images/gallery/events/activity-img_7283.jpg',
+		src: '/Meadow-Paradise/images/gallery/events/activity-img_7283.jpg',
 		alt: 'Активности на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -403,7 +403,7 @@ const eventsImages: GalleryImage[] = [
 	},
 	{
 		id: 'evt-13',
-		src: '/images/gallery/events/activity-img_7448.jpg',
+		src: '/Meadow-Paradise/images/gallery/events/activity-img_7448.jpg',
 		alt: 'Активности на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -411,7 +411,7 @@ const eventsImages: GalleryImage[] = [
 	},
 	{
 		id: 'evt-14',
-		src: '/images/gallery/events/activity-img_7449.jpg',
+		src: '/Meadow-Paradise/images/gallery/events/activity-img_7449.jpg',
 		alt: 'Активности на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -419,7 +419,7 @@ const eventsImages: GalleryImage[] = [
 	},
 	{
 		id: 'evt-15',
-		src: '/images/gallery/events/activity-img_7450.jpg',
+		src: '/Meadow-Paradise/images/gallery/events/activity-img_7450.jpg',
 		alt: 'Активности на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -427,7 +427,7 @@ const eventsImages: GalleryImage[] = [
 	},
 	{
 		id: 'evt-16',
-		src: '/images/gallery/events/activity-img_7451.jpg',
+		src: '/Meadow-Paradise/images/gallery/events/activity-img_7451.jpg',
 		alt: 'Активности на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -435,7 +435,7 @@ const eventsImages: GalleryImage[] = [
 	},
 	{
 		id: 'evt-17',
-		src: '/images/gallery/events/activity-img_7456.jpg',
+		src: '/Meadow-Paradise/images/gallery/events/activity-img_7456.jpg',
 		alt: 'Активности на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -443,7 +443,7 @@ const eventsImages: GalleryImage[] = [
 	},
 	{
 		id: 'evt-18',
-		src: '/images/gallery/events/activity-img_7466.jpg',
+		src: '/Meadow-Paradise/images/gallery/events/activity-img_7466.jpg',
 		alt: 'Активности на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -451,7 +451,7 @@ const eventsImages: GalleryImage[] = [
 	},
 	{
 		id: 'evt-19',
-		src: '/images/gallery/events/activity-img_7467.jpg',
+		src: '/Meadow-Paradise/images/gallery/events/activity-img_7467.jpg',
 		alt: 'Активности на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -459,7 +459,7 @@ const eventsImages: GalleryImage[] = [
 	},
 	{
 		id: 'evt-20',
-		src: '/images/gallery/events/activity-img_7468.jpg',
+		src: '/Meadow-Paradise/images/gallery/events/activity-img_7468.jpg',
 		alt: 'Активности на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -467,7 +467,7 @@ const eventsImages: GalleryImage[] = [
 	},
 	{
 		id: 'evt-21',
-		src: '/images/gallery/events/activity-img_7469.jpg',
+		src: '/Meadow-Paradise/images/gallery/events/activity-img_7469.jpg',
 		alt: 'Активности на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -475,7 +475,7 @@ const eventsImages: GalleryImage[] = [
 	},
 	{
 		id: 'evt-22',
-		src: '/images/gallery/events/activity-img_7472.jpg',
+		src: '/Meadow-Paradise/images/gallery/events/activity-img_7472.jpg',
 		alt: 'Активности на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -483,7 +483,7 @@ const eventsImages: GalleryImage[] = [
 	},
 	{
 		id: 'evt-23',
-		src: '/images/gallery/events/activity-img_7479.jpg',
+		src: '/Meadow-Paradise/images/gallery/events/activity-img_7479.jpg',
 		alt: 'Активности на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -491,7 +491,7 @@ const eventsImages: GalleryImage[] = [
 	},
 	{
 		id: 'evt-24',
-		src: '/images/gallery/events/activity-img_7485.jpg',
+		src: '/Meadow-Paradise/images/gallery/events/activity-img_7485.jpg',
 		alt: 'Активности на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -499,7 +499,7 @@ const eventsImages: GalleryImage[] = [
 	},
 	{
 		id: 'evt-25',
-		src: '/images/gallery/events/activity-img_7488.jpg',
+		src: '/Meadow-Paradise/images/gallery/events/activity-img_7488.jpg',
 		alt: 'Активности на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -507,7 +507,7 @@ const eventsImages: GalleryImage[] = [
 	},
 	{
 		id: 'evt-26',
-		src: '/images/gallery/events/activity-img_7490.jpg',
+		src: '/Meadow-Paradise/images/gallery/events/activity-img_7490.jpg',
 		alt: 'Активности на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -515,7 +515,7 @@ const eventsImages: GalleryImage[] = [
 	},
 	{
 		id: 'evt-27',
-		src: '/images/gallery/events/event-img_7243.jpg',
+		src: '/Meadow-Paradise/images/gallery/events/event-img_7243.jpg',
 		alt: 'Мероприятия на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -523,7 +523,7 @@ const eventsImages: GalleryImage[] = [
 	},
 	{
 		id: 'evt-28',
-		src: '/images/gallery/events/event-img_7249.jpg',
+		src: '/Meadow-Paradise/images/gallery/events/event-img_7249.jpg',
 		alt: 'Мероприятия на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -531,7 +531,7 @@ const eventsImages: GalleryImage[] = [
 	},
 	{
 		id: 'evt-29',
-		src: '/images/gallery/events/event-img_7452.jpg',
+		src: '/Meadow-Paradise/images/gallery/events/event-img_7452.jpg',
 		alt: 'Мероприятия на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -539,7 +539,7 @@ const eventsImages: GalleryImage[] = [
 	},
 	{
 		id: 'evt-30',
-		src: '/images/gallery/events/event-img_7473.jpg',
+		src: '/Meadow-Paradise/images/gallery/events/event-img_7473.jpg',
 		alt: 'Мероприятия на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -547,7 +547,7 @@ const eventsImages: GalleryImage[] = [
 	},
 	{
 		id: 'evt-31',
-		src: '/images/gallery/events/event-img_7491.jpg',
+		src: '/Meadow-Paradise/images/gallery/events/event-img_7491.jpg',
 		alt: 'Мероприятия на ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -559,7 +559,7 @@ const eventsImages: GalleryImage[] = [
 const facilitiesImages: GalleryImage[] = [
 	{
 		id: 'fac-1',
-		src: '/images/gallery/facilities/ranch-facility-img_6832.jpg',
+		src: '/Meadow-Paradise/images/gallery/facilities/ranch-facility-img_6832.jpg',
 		alt: 'Объекты ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -567,7 +567,7 @@ const facilitiesImages: GalleryImage[] = [
 	},
 	{
 		id: 'fac-2',
-		src: '/images/gallery/facilities/ranch-facility-img_6843.jpg',
+		src: '/Meadow-Paradise/images/gallery/facilities/ranch-facility-img_6843.jpg',
 		alt: 'Объекты ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -575,7 +575,7 @@ const facilitiesImages: GalleryImage[] = [
 	},
 	{
 		id: 'fac-3',
-		src: '/images/gallery/facilities/ranch-facility-img_6846.jpg',
+		src: '/Meadow-Paradise/images/gallery/facilities/ranch-facility-img_6846.jpg',
 		alt: 'Объекты ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -583,7 +583,7 @@ const facilitiesImages: GalleryImage[] = [
 	},
 	{
 		id: 'fac-4',
-		src: '/images/gallery/facilities/ranch-facility-img_6857.jpg',
+		src: '/Meadow-Paradise/images/gallery/facilities/ranch-facility-img_6857.jpg',
 		alt: 'Объекты ранчо Meadow Paradise',
 		width: 800,
 		height: 600,
@@ -591,7 +591,7 @@ const facilitiesImages: GalleryImage[] = [
 	},
 	{
 		id: 'fac-5',
-		src: '/images/gallery/facilities/ranch-facility-img_6867.jpg',
+		src: '/Meadow-Paradise/images/gallery/facilities/ranch-facility-img_6867.jpg',
 		alt: 'Объекты ранчо Meadow Paradise',
 		width: 800,
 		height: 600,

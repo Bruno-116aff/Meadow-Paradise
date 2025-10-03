@@ -1,7 +1,7 @@
 export const footerData = {
 	brand: {
 		logo: {
-			src: '/images/gallery/logos/meadow-paradise-logo.png',
+			src: '/Meadow-Paradise/images/gallery/logos/meadow-paradise-logo.png',
 			alt: 'Meadow Paradise Logo',
 			fallback: 'MP',
 		},

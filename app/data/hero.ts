@@ -1,6 +1,6 @@
 export const heroData = {
 	background: {
-		image: '/images/gallery/hero/hero-3l4a2182.jpg',
+		image: '/Meadow-Paradise/images/gallery/hero/hero-3l4a2182.jpg',
 		alt: 'Meadow Paradise Rancho - закат над ранчо',
 		gradient: 'from-black/50 via-black/60 to-black/70',
 	},

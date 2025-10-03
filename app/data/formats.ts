@@ -19,7 +19,7 @@ export const formats: Format[] = [
 		title: 'Тимбилдинги и ретриты',
 		description:
 			'Развитие коммуникации и лидерства через взаимодействие с лошадьми.',
-		image: '/images/backup/IMG_5786.JPG',
+		image: '/Meadow-Paradise/images/backup/IMG_5786.JPG',
 		details: {
 			duration: '2-4 часа',
 			capacity: '8-15 человек',
@@ -38,7 +38,7 @@ export const formats: Format[] = [
 		title: 'CSR и деловые события',
 		description:
 			'Камерные презентации, полезные встречи, созидательные форматы.',
-		image: '/images/gallery/events/activity-img_7272.jpg',
+		image: '/Meadow-Paradise/images/gallery/events/activity-img_7272.jpg',
 		details: {
 			duration: '1-3 часа',
 			capacity: '10-25 человек',
@@ -62,7 +62,7 @@ export const formats: Format[] = [
 		title: 'Фотосессии с лошадьми',
 		description:
 			'Love story, семейные, детские, портфолио. Помощь с реквизитом.',
-		image: '/images/backup/IMG_7237.JPG',
+		image: '/Meadow-Paradise/images/backup/IMG_7237.JPG',
 		details: {
 			duration: '1-2 часа',
 			capacity: 'до 8 человек',
@@ -85,7 +85,7 @@ export const formats: Format[] = [
 		id: 'hen-parties',
 		title: 'Девичники и дни рождения',
 		description: 'Уютная площадка, закатный свет, бохо-настрой.',
-		image: '/images/backup/IMG_4531.JPG',
+		image: '/Meadow-Paradise/images/backup/IMG_4531.JPG',
 		details: {
 			duration: '3-5 часов',
 			capacity: '6-12 человек',
@@ -99,7 +99,7 @@ export const formats: Format[] = [
 		id: 'children-birthdays',
 		title: 'Детские дни рождения',
 		description: 'Тематические программы: ковбои, единороги и др.',
-		image: '/images/backup/IMG_5017.JPG',
+		image: '/Meadow-Paradise/images/backup/IMG_5017.JPG',
 		details: {
 			duration: '2-3 часа',
 			capacity: 'до 10 детей',
@@ -114,7 +114,7 @@ export const formats: Format[] = [
 		title: 'Помолвки и церемонии',
 		description:
 			'Камерные свадебные церемонии, символичный «принц на белом коне».',
-		image: '/images/gallery/events/event-img_7491.jpg',
+		image: '/Meadow-Paradise/images/gallery/events/event-img_7491.jpg',
 		details: {
 			duration: '2-4 часа',
 			capacity: 'до 30 гостей',
@@ -132,7 +132,7 @@ export const formats: Format[] = [
 		id: 'ranch-tour',
 		title: 'Тур по ранчо',
 		description: 'Знакомство с лошадьми, историей и бытом ранчо.',
-		image: '/images/backup/IMG_4279.JPG',
+		image: '/Meadow-Paradise/images/backup/IMG_4279.JPG',
 		details: {
 			duration: '1-2 часа',
 			capacity: 'до 15 человек',
@@ -152,7 +152,7 @@ export const formats: Format[] = [
 		title: 'Уроки и воркшопы',
 		description:
 			'Индивидуально и мини-группы. Базовые навыки и практика присутствия.',
-		image: '/images/backup/IMG_5735.JPG',
+		image: '/Meadow-Paradise/images/backup/IMG_5735.JPG',
 		details: {
 			duration: '1-2 часа',
 			capacity: '1-4 человека',
@@ -170,7 +170,7 @@ export const formats: Format[] = [
 		id: 'picnics',
 		title: 'Пикник среди лошадей',
 		description: 'Эстетичное пространство и тёплая атмосфера на закате.',
-		image: '/images/backup/IMG_6867.JPG',
+		image: '/Meadow-Paradise/images/backup/IMG_6867.JPG',
 		details: {
 			duration: '2-3 часа',
 			capacity: '4-12 человек',
