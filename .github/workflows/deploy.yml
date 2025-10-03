@@ -32,7 +32,7 @@ jobs:
         run: npm run build:static
         env:
           NODE_ENV: production
-          
+
       - name: Remove large files from build
         run: |
           find ./build/client -name "*.jpg" -size +5M -delete || true
@@ -50,6 +50,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/master'
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GH_TOKEN || secrets.GITHUB_TOKEN }}
           publish_dir: ./build/client
           cname: # Оставьте пустым если не используете собственный домен
