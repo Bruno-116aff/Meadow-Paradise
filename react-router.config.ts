@@ -9,9 +9,7 @@ export default {
   
   // Настройки для статического экспорта
   ...(isStatic && {
-    prerender: {
-      routes: ['/']
-    },
+    prerender: ['/']
   }),
   
   // Настройки для GitHub Pages
