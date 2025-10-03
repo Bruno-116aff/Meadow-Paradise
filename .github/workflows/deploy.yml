@@ -14,8 +14,6 @@ permissions:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
 
     steps:
       - name: Checkout
@@ -34,7 +32,7 @@ jobs:
         run: npm run build:static
         env:
           NODE_ENV: production
-
+          
       - name: Remove large files from build
         run: |
           find ./build/client -name "*.jpg" -size +5M -delete || true
@@ -43,19 +41,15 @@ jobs:
           find ./build/client -name "*.webp" -size +5M -delete || true
           echo "Large files removed"
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-
       - name: Check build size
         run: |
           du -sh ./build/client
           echo "Build directory size checked"
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./build/client
-
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/master'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build/client
+          cname: # Оставьте пустым если не используете собственный домен
