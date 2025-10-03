@@ -1,11 +1,19 @@
 import React, { useState } from 'react';
 import { Container } from './ui/Container';
 import { Lightbox } from './ui/Lightbox';
+import { Button } from './ui/Button';
 import { galleryImages } from '../data/gallery';
+import { componentStyles } from '../styles/components';
+import { textStyles } from '../styles/typography';
 
 export const Gallery: React.FC = () => {
 	const [lightboxOpen, setLightboxOpen] = useState(false);
 	const [currentImageIndex, setCurrentImageIndex] = useState(0);
+	const [visibleCount, setVisibleCount] = useState(6);
+
+	// Показываем изображения постепенно
+	const visibleImages = galleryImages.slice(0, visibleCount);
+	const hasMoreImages = visibleCount < galleryImages.length;
 
 	const openLightbox = (index: number) => {
 		setCurrentImageIndex(index);
@@ -28,52 +36,70 @@ export const Gallery: React.FC = () => {
 		);
 	};
 
+	const loadMoreImages = () => {
+		setVisibleCount(prev => Math.min(prev + 12, galleryImages.length));
+	};
+
 	return (
 		<section id='gallery' className='py-20 bg-white'>
 			<Container>
 				<div className='text-center mb-16'>
-					<h2 className='text-h2 mb-6'>Галерея</h2>
-					<p className='text-lead max-w-3xl mx-auto'>
+					<h2 className={textStyles.heading}>Галерея</h2>
+					<p className={`${textStyles.lead} max-w-3xl mx-auto`}>
 						Ранчо, лошади, события, детали пространства.
 					</p>
 				</div>
 
-				{/* Masonry Grid */}
-				<div className='columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6'>
-					{galleryImages.map((image, index) => (
+				{/* Compact Grid */}
+				<div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-8'>
+					{visibleImages.map((image, index) => (
 						<div
 							key={image.id}
-							className='break-inside-avoid cursor-pointer group'
+							className={`${componentStyles.gallery.item} animate-fade-in`}
 							onClick={() => openLightbox(index)}
+							style={{
+								animationDelay: `${index * 0.1}s`,
+								animationFillMode: 'both',
+							}}
 						>
-							<div className='relative overflow-hidden rounded-2xl shadow-lg hover-lift'>
+							<div className={componentStyles.gallery.image}>
 								<img
 									src={image.src}
 									alt={image.alt}
-									className='w-full h-auto transition-transform duration-300 group-hover:scale-105'
+									className='w-full h-32 md:h-40 object-cover'
 									loading='lazy'
 								/>
-								<div className='absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center'>
-									<div className='opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
-										<svg
-											className='w-12 h-12 text-white'
-											fill='none'
-											stroke='currentColor'
-											viewBox='0 0 24 24'
-										>
-											<path
-												strokeLinecap='round'
-												strokeLinejoin='round'
-												strokeWidth={2}
-												d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7'
-											/>
-										</svg>
-									</div>
+								<div className={componentStyles.gallery.overlay}>
+									<svg
+										className={componentStyles.gallery.icon}
+										fill='none'
+										stroke='currentColor'
+										viewBox='0 0 24 24'
+									>
+										<path
+											strokeLinecap='round'
+											strokeLinejoin='round'
+											strokeWidth={2}
+											d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7'
+										/>
+									</svg>
 								</div>
 							</div>
 						</div>
 					))}
 				</div>
+
+				{/* Кнопка показать еще */}
+				{hasMoreImages && (
+					<div className='text-center'>
+						<Button
+							onClick={loadMoreImages}
+							className='mx-auto bg-forest-green text-white hover:bg-forest-green/90 hover:text-white border-2 border-forest-green hover:border-forest-green/90 transition-all duration-200'
+						>
+							Показать еще
+						</Button>
+					</div>
+				)}
 
 				{/* Lightbox */}
 				<Lightbox

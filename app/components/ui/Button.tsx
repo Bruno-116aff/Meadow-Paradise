@@ -1,7 +1,8 @@
 import React from 'react';
+import { componentStyles } from '../../styles/components';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-	variant?: 'primary' | 'secondary' | 'outline';
+	variant?: 'primary' | 'secondary' | 'outline' | 'ghost';
 	size?: 'sm' | 'md' | 'lg';
 	children: React.ReactNode;
 }
@@ -13,25 +14,20 @@ export const Button: React.FC<ButtonProps> = ({
 	className = '',
 	...props
 }) => {
-	const baseClasses =
-		'font-medium rounded-lg transition-all duration-200 focus-ring hover-lift inline-flex items-center justify-center';
-
+	const baseClasses = componentStyles.button.base;
+	
 	const variantClasses = {
-		primary: 'bg-forest-green text-white hover:bg-opacity-90',
-		secondary: 'bg-wheat text-charcoal hover:bg-opacity-90',
-		outline:
-			'border-2 border-forest-green text-forest-green bg-transparent hover:bg-forest-green hover:text-white',
+		primary: componentStyles.button.primary,
+		secondary: componentStyles.button.secondary,
+		outline: componentStyles.button.outline,
+		ghost: componentStyles.button.ghost,
 	};
 
-	const sizeClasses = {
-		sm: 'px-4 py-2 text-sm',
-		md: 'px-6 py-3 text-base',
-		lg: 'px-8 py-4 text-lg',
-	};
+	const sizeClasses = componentStyles.button.sizes[size];
 
 	return (
 		<button
-			className={`${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]} ${className}`}
+			className={`${baseClasses} ${variantClasses[variant]} ${sizeClasses} ${className}`}
 			{...props}
 		>
 			{children}
