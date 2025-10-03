@@ -32,9 +32,8 @@ export const Hero: React.FC = () => {
 			<Container className='relative z-30 text-center'>
 				<div className='max-w-4xl mx-auto animate-fade-in'>
 					<h1
-						className='text-h1 mb-8 font-serif text-gray-100'
+						className='text-h1 mb-8 font-serif hero-title'
 						style={{
-							color: '#dcc7a1 !important', // light gray-100
 							textShadow:
 								'2px 2px 4px rgba(0,0,0,0.8), 0 0 8px rgba(0,0,0,0.6)',
 						}}
@@ -42,9 +41,8 @@ export const Hero: React.FC = () => {
 						{heroData.content.title}
 					</h1>
 					<p
-						className='text-lead mb-12 max-w-2xl mx-auto text-gray-200'
+						className='text-lead mb-12 max-w-2xl mx-auto hero-subtitle'
 						style={{
-							color: '#e5e7eb !important', // light gray-200
 							textShadow:
 								'1px 1px 3px rgba(0,0,0,0.7), 0 0 6px rgba(0,0,0,0.5)',
 						}}
