@@ -8,7 +8,8 @@ export default {
 	ssr: !isStatic,
 
 	// Базовый путь для GitHub Pages
-	basename: isStatic ? '/Meadow-Paradise' : '/',
+	// basename: isStatic ? '/Meadow-Paradise' : '/',
+	basename: '/',
 
 	// Настройки для статического экспорта
 	...(isStatic && {
