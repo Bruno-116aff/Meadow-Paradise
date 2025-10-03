@@ -4,6 +4,7 @@
 	"type": "module",
 	"scripts": {
 		"build": "react-router build",
+		"build:gh-pages": "react-router build --config react-router.config.gh-pages.ts",
 		"dev": "react-router dev",
 		"start": "react-router-serve ./build/server/index.js",
 		"typecheck": "react-router typegen && tsc",
