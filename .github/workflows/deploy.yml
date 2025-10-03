@@ -34,7 +34,7 @@ jobs:
         run: npm run build:static
         env:
           NODE_ENV: production
-          
+
       - name: Remove large files from build
         run: |
           find ./build/client -name "*.jpg" -size +5M -delete || true
@@ -50,7 +50,7 @@ jobs:
         run: |
           du -sh ./build/client
           echo "Build directory size checked"
-          
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
