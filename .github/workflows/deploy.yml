@@ -13,7 +13,7 @@ permissions:
 
 # Разрешаем Actions использовать GITHUB_TOKEN
 env:
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
 jobs:
   build-and-deploy:
