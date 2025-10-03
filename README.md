@@ -1,87 +1,61 @@
-# Welcome to React Router!
+# 🐎 Meadow Paradise Rancho
 
-A modern, production-ready template for building full-stack React applications using React Router.
+Красивый одностраничный сайт ранчо в Пиргосе (Лимассол) с современным дизайном.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+## 🚀 Быстрый старт
 
-## Features
+### Docker разработка (рекомендуется):
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+```bash
+# Запуск с Docker Desktop мониторингом
+.\scripts\start-docker-desktop.ps1
 
-## Getting Started
+# Или простой запуск
+docker-compose -f docker-compose.dev.yml up --build -d
+```
 
-### Installation
+Откройте http://localhost:5173 в браузере.
 
-Install the dependencies:
+### Обычная разработка:
 
 ```bash
 npm install
-```
-
-### Development
-
-Start the development server with HMR:
-
-```bash
 npm run dev
 ```
 
-Your application will be available at `http://localhost:5173`.
+## 🛠 Технологии
 
-## Building for Production
+- **React 19** - UI библиотека
+- **TypeScript** - Типизация
+- **TailwindCSS 4** - Стили
+- **Vite** - Сборщик
+- **React Router 7** - Роутинг
+- **Docker** - Контейнеризация
 
-Create a production build:
+## 📁 Структура
 
-```bash
-npm run build
-```
+- `app/` - Исходный код
+- `public/` - Статические файлы
+- `scripts/` - Полезные скрипты
+- `doc/` - Документация
 
-## Deployment
+## 🎨 Особенности
 
-### Docker Deployment
+- ✅ Адаптивный дизайн
+- ✅ SEO оптимизация
+- ✅ Доступность (WCAG AA)
+- ✅ Производительность
+- ✅ Hot reload в Docker
+- ✅ Ленивая загрузка изображений
 
-To build and run using Docker:
+## 📞 Контакты
 
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+**Meadow Paradise Rancho**  
+📍 Пиргос, Лимассол, Кипр  
+📞 +35797719752  
+📧 info@meadowparadise.com  
+🌐 [Instagram](https://www.instagram.com/meadow.paradise)
 
 ---
 
-Built with ❤️ using React Router.
+*Предварительная запись обязательна* 🐎✨

@@ -1,30 +1,40 @@
 {
-  "name": "meadow-paradise-rancho",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "build": "react-router build",
-    "dev": "react-router dev",
-    "start": "react-router-serve ./build/server/index.js",
-    "typecheck": "react-router typegen && tsc"
-  },
-  "dependencies": {
-    "@react-router/node": "^7.9.2",
-    "@react-router/serve": "^7.9.2",
-    "isbot": "^5.1.31",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1",
-    "react-router": "^7.9.2"
-  },
-  "devDependencies": {
-    "@react-router/dev": "^7.9.2",
-    "@tailwindcss/vite": "^4.1.13",
-    "@types/node": "^22",
-    "@types/react": "^19.1.13",
-    "@types/react-dom": "^19.1.9",
-    "tailwindcss": "^4.1.13",
-    "typescript": "^5.9.2",
-    "vite": "^7.1.7",
-    "vite-tsconfig-paths": "^5.1.4"
-  }
+	"name": "meadow-paradise-rancho",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"build": "react-router build",
+		"dev": "react-router dev",
+		"start": "react-router-serve ./build/server/index.js",
+		"typecheck": "react-router typegen && tsc",
+		"docker:dev": "docker-compose -f docker-compose.dev.yml up --build",
+		"docker:dev:detached": "docker-compose -f docker-compose.dev.yml up --build -d",
+		"docker:stop": "docker-compose -f docker-compose.dev.yml down",
+		"docker:logs": "docker-compose -f docker-compose.dev.yml logs -f meadow-paradise-dev",
+		"docker:shell": "docker-compose -f docker-compose.dev.yml exec meadow-paradise-dev sh",
+		"docker:clean": "docker-compose -f docker-compose.dev.yml down -v && docker system prune -f",
+		"docker:build": "docker-compose -f docker-compose.dev.yml build --no-cache",
+		"docker:monitor": "node scripts/monitor.js",
+		"docker:desktop": "node scripts/start-docker-desktop.js",
+		"docker:open": "start http://localhost:5173"
+	},
+	"dependencies": {
+		"@react-router/node": "^7.9.2",
+		"@react-router/serve": "^7.9.2",
+		"isbot": "^5.1.31",
+		"react": "^19.1.1",
+		"react-dom": "^19.1.1",
+		"react-router": "^7.9.2"
+	},
+	"devDependencies": {
+		"@react-router/dev": "^7.9.2",
+		"@tailwindcss/vite": "^4.1.13",
+		"@types/node": "^22",
+		"@types/react": "^19.1.13",
+		"@types/react-dom": "^19.1.9",
+		"tailwindcss": "^4.1.13",
+		"typescript": "^5.9.2",
+		"vite": "^7.1.7",
+		"vite-tsconfig-paths": "^5.1.4"
+	}
 }

@@ -1,0 +1,51 @@
+{
+	"name": "Meadow Paradise Rancho Dev",
+	"dockerComposeFile": "../docker-compose.dev.yml",
+	"service": "meadow-paradise-dev",
+	"workspaceFolder": "/app",
+	"shutdownAction": "stopCompose",
+
+	// Настройки для VS Code
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode.vscode-typescript-next",
+				"bradlc.vscode-tailwindcss",
+				"esbenp.prettier-vscode",
+				"ms-vscode.vscode-json",
+				"ms-vscode.vscode-eslint",
+				"formulahendry.auto-rename-tag",
+				"christian-kohler.path-intellisense"
+			],
+			"settings": {
+				"typescript.preferences.importModuleSpecifier": "relative",
+				"editor.formatOnSave": true,
+				"editor.defaultFormatter": "esbenp.prettier-vscode",
+				"editor.codeActionsOnSave": {
+					"source.fixAll.eslint": true
+				},
+				"tailwindCSS.includeLanguages": {
+					"typescript": "javascript",
+					"typescriptreact": "javascript"
+				}
+			}
+		}
+	},
+
+	// Проброс портов
+	"forwardPorts": [5173],
+	"portsAttributes": {
+		"5173": {
+			"label": "Vite Dev Server",
+			"onAutoForward": "notify"
+		}
+	},
+
+	// Команды после создания контейнера
+	"postCreateCommand": "npm install",
+
+	// Переменные окружения
+	"remoteEnv": {
+		"NODE_ENV": "development"
+	}
+}

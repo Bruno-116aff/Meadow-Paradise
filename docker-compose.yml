@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  # Основной сервис для разработки
+  meadow-paradise-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - '5173:5173' # Vite dev server
+    volumes:
+      # Монтируем исходный код для hot reload
+      - .:/app
+      # Исключаем node_modules из монтирования для производительности
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=true # Для работы hot reload в Docker
+    stdin_open: true
+    tty: true
+    networks:
+      - meadow-paradise-network
+
+  # Nginx для продакшена (опционально)
+  nginx:
+    image: nginx:alpine
+    ports:
+      - '80:80'
+      - '443:443'
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./build:/usr/share/nginx/html:ro
+    profiles:
+      - production
+    networks:
+      - meadow-paradise-network
+
+networks:
+  meadow-paradise-network:
+    driver: bridge
+
+volumes:
+  node_modules:

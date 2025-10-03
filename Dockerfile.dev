@@ -1,0 +1,27 @@
+FROM node:20-alpine
+
+# Устанавливаем необходимые зависимости
+RUN apk add --no-cache git
+
+# Создаем рабочую директорию
+WORKDIR /app
+
+# Копируем package.json и package-lock.json
+COPY package*.json ./
+
+# Устанавливаем зависимости
+RUN npm ci
+
+# Копируем исходный код
+COPY . .
+
+# Открываем порт для dev сервера
+EXPOSE 5173
+
+# Настройки для быстрого hot reload
+ENV CHOKIDAR_USEPOLLING=true
+ENV WATCHPACK_POLLING=true
+ENV FAST_REFRESH=true
+
+# Команда для разработки с hot reload
+CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0", "--port", "5173"]
