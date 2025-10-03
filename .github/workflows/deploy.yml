@@ -16,7 +16,6 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Checkout
@@ -36,14 +35,14 @@ jobs:
         env:
           NODE_ENV: production
 
-    - name: Setup Pages
-      uses: actions/configure-pages@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
       
-    - name: Upload artifact
-      uses: actions/upload-pages-artifact@v3
-      with:
-        path: ./build/client
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./build/client
         
-    - name: Deploy to GitHub Pages
-      id: deployment
-      uses: actions/deploy-pages@v4
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
